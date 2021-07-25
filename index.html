@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PetsCare</a>
+    </header>
+    <div class="banner">
+        <video src="2.mp4" muted autoplay loop type="mp4"></video>
+        <div class="textBox">
+            <h2>Make a new friend today!!</h2>
+            <p>“A true friend leaves paw prints on your heart.”  How true is this?
+                 Anyone who has had a dog will tell you that they will always have a special place in their heart for their
+                  furry friend, even decades after they’re passing.</p><a href="article.html">Read More</a>
+        </div>
+        <div class="videoBx">
+            <video src="2.mp4" muted autoplay loop type="mp4"></video>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="https://www.instagram.com/shristik_/"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+    </div>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="article.html">Articles</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle')
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+        </script>
+</body>
+</html>

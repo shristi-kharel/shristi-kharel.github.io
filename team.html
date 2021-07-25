@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Our Team Section</title>
+	<link rel="stylesheet" href="team.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <h1>Our Team</h1>
+  <div class="team">
+    <div class="team_member">
+      <div class="team_img">
+        <img src="team1.png" alt="Team_image">
+      </div>
+      <h3>Dr. Christian Pellegrin</h3>
+      <p class="role">Veterinarian</p>
+      <p>Dr. Pellegrin completed his Bachelor of Science from LSU in 2016 and attended LSU School of Veterinary Medicine to receive his doctorate in 2020.
+        Dr. Pellegrin lives in New Orleans with his fiancé Holly Dodson, DVM, and their gaggle of 4 obnoxious but lovable pets. </p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="team2.png" alt="Team_image">
+      </div>
+      <h3>Dr. Amelie Lanaux</h3>
+      <p class="role">Veterinarian</p>
+      <p>Dr. Amelie Lanaux was born and raised in New Orleans and graduated from St. Mary’s Dominican High School. She attended Louisiana State University for seven years, earning her Bachelor’s degree in Animal Science and her Doctor of Veterinary Medicine.
+          </p></div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="team3.png" alt="Team_image">
+      </div>
+      <h3>Dr. Charlie Scott</h3>
+      <p class="role">Veterinarian</p>
+      <p>Dr. Charlie Hutchinson Scott attended Nicholls State University and Louisiana State University. Dr. Claire received his Bachelor’s of Science in Animal Science from LSU. He later received his Doctor of Veterinary Medicine from the LSU School of Veterinary Medicine. 
+          </p>
+    </div>
+  </div>
+</div>	
+
+<div class="menuToggle" onclick="toggleMenu();"></div>
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="article.html">Articles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+function toggleMenu(){
+    var menuToggle = document.querySelector('.menuToggle')
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+}
+</script>
+
+</body>
+</html>

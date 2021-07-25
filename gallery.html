@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="pattern.css">
+
+  <style>
+        body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+    
+      .swiper-container {
+        width: 100%;
+        padding-top: 90px;
+        padding-bottom: 10px;
+       transition: all 0.5s linear;
+      }
+    
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 420px;
+        height: 420px;
+        }
+        .swiper-slide .number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    text-shadow: 4px 4px 4px rgba(255,255,255,0.5),
+    -5px px 4px rgba(255,255,255,0.5);
+    font-size: 100px;
+    font-weight: 900;
+}
+  </style>
+</head>
+<body>
+   
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url(3.jpg);"><div class="number">01</div></div>
+            <div class="swiper-slide" style="background-image: url(5.jpg);"><div class="number">02</div></div>
+            <div class="swiper-slide" style="background-image: url(6.jpg);"><div class="number">03</div></div>
+            <div class="swiper-slide" style="background-image: url(4.jpeg);"><div class="number">04</div></div>
+            <div class="swiper-slide" style="background-image: url(1.jpg);"><div class="number">05</div></div>
+            <div class="swiper-slide" style="background-image: url(2.jpg);"><div class="number">06</div></div>
+            <div class="swiper-slide" style="background-image: url(4.jpg);"><div class="number">07</div></div>
+            <div class="swiper-slide" style="background-image: url(7.jpg);"><div class="number">08</div></div>
+            <div class="swiper-slide" style="background-image: url(8.jpg);"><div class="number">09</div></div>
+            <div class="swiper-slide" style="background-image: url(10.jpeg);"><div class="number">10</div></div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+          loop:true,
+        });
+      </script>
+
+<div class="menuToggle" onclick="toggleMenu();"></div>
+<div class="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="article.html">Articles</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+function toggleMenu(){
+    var menuToggle = document.querySelector('.menuToggle')
+    var navigation = document.querySelector('.navigation')
+    menuToggle.classList.toggle('active')
+    navigation.classList.toggle('active')
+}
+</script>
+
+</body>
+</html>

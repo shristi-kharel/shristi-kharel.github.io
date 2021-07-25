@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Services</title>
+      <link rel="stylesheet" href="about.css">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   </head>
+   <body>
+      <div class="slider owl-carousel">
+         <div class="card">
+            <div class="img">
+               <img src="a4.jpeg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                Wellness & Prevention
+               </div>
+               <div class="sub-title">
+               
+               </div>
+               <p>Regular nose-to-tail wellness exams, early detection, and age-specific assessments help keep your pet healthy. 
+                </p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="img">
+               <img src="vet.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                Testing & Diagnois
+               </div>
+               <div class="sub-title">
+                
+               </div>
+               <p>Early detection using diagnostic testing provides a complete picture of your pet’s health, improving outcomes, and providing baseline results.</p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="img">
+               <img src="4.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                Specialized Care
+               </div>
+               <div class="sub-title">
+                
+               </div>
+               <p>Our experienced veterinary team provides comprehensive medical care, ranging from routine to advanced procedures and treatments. 
+                   </p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="card">
+            <div class="img">
+               <img src="team.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                Surgical Procedures
+               </div>
+               <div class="sub-title">
+                
+               </div>
+               <p>From routine to advanced surgical procedures, our practice offers safe and effective options using state-of-the-art equipment and best practices.
+                   </p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="img">
+               <img src="5.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                 Pet Boarding
+               </div>
+               <div class="sub-title">
+                
+               </div>
+               <p>
+                Trust our professional and friendly team to take great care of your pet during your next trip.
+            
+               </p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+         <div class="card">
+            <div class="img">
+               <img src="pet.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                Grooming
+               </div>
+               <div class="sub-title">
+                  
+               </div>
+               <p> Help your pet look and feel their best with our professional, onsite pet grooming services.
+                   
+                  
+               </p>
+               <div class="btn">
+                  <a href="#"><button>Learn More</button></a>
+               </div>
+            </div>
+         </div>
+         
+         <div class="card">
+            <div class="img">
+               <img src="review.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="title">
+                  Urgent Care
+               </div>
+               <div class="sub-title">
+                  
+               </div>
+               <p>Does your pet need emergency medical care? Our Metairie location is open 24/7. Call now for immediate assistance from our trained veterinary staff.
+                 
+               </p>
+               <div class="btn">
+                  <a href="contact.html"><button>Leave A Review</button></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="article.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.menuToggle')
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+    </script>
+      <script>
+         $(".slider").owlCarousel({
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000, //2000ms = 2s;
+           autoplayHoverPause: true,
+         });
+      </script>
+   </body>
+</html>

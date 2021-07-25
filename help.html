@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Help</title>
+
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="3.jpg">
+          <div class="card-content">
+            <h1 class="card-header">Adopting</h1>
+            <p class="card-text">
+              Give the animal you<strong> love</strong>,
+              a home
+            </p>
+            <button class="card-btn">Adopt Now <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img
+            class="card-img"
+            src="5.jpg">
+          <div class="card-content">
+            <h1 class="card-header">Volunteering</h1>
+            <p class="card-text">
+              Be part of the team 
+              <strong>helping</strong> the animals
+            </p>
+            <button class="card-btn">Join Now <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="6.jpg">
+          <div class="card-content">
+            <h1 class="card-header">Charity</h1>
+            <p class="card-text">
+              <strong>Support</strong> the pets care foundation
+            </p>
+            <button class="card-btn">Help Now <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="article.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.menuToggle')
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+    </script>
+      <script>
+         $(".slider").owlCarousel({
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000, //2000ms = 2s;
+           autoplayHoverPause: true,
+         });
+      </script>
+  </body>
+</html>
